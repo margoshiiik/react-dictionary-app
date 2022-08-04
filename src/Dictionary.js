@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import "./Dictionary.css"
+import axios from "axios";
 
 export default function Dictionary(){
     let [keyword, setKeyword] = useState(""); 
@@ -8,18 +9,23 @@ export default function Dictionary(){
         setKeyword(event.target.value);
     }
 
-    function showResult(event){
+    function handleResponse(response){
+        console.log(response.data[0])
+    }
+
+    function search(event){
         event.preventDefault(); 
-        alert(keyword);
+        let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`
+        axios.get(apiUrl).then(handleResponse)
     }
 
 
     return (
         <div className="Dictionary">
             <h2 className="mt-3">What are you looking for?</h2>
-            <form class="input-group mt-5 mb-3" onSubmit={showResult}>
-                <input type="text" class="form-control" placeholder="Search" onChange={setKeywordOnChange}/>
-                <button class="btn btn-dark" type="button" id="button-addon2" onClick={showResult}>Search</button>
+            <form className="input-group mt-5 mb-3" onSubmit={search}>
+                <input type="text" className="form-control" placeholder="Search" onChange={setKeywordOnChange}/>
+                <button className="btn btn-dark" type="button" id="button-addon2" onClick={search}>Search</button>
             </form>
         </div>
     )
