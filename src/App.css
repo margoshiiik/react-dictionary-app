@@ -1,3 +1,12 @@
+body{
+  background-color: rgb(215, 215, 248);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 .App {
   text-align: center;
+}
+
+.App-header{
+  margin: 30px 0;
 }

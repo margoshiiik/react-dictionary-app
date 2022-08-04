@@ -1,0 +1,9 @@
+
+.Dictionary h2{
+    font-style: italic;
+}
+
+.Dictionary .input-group{
+    width: 30%;
+    margin: 0 auto;
+}
