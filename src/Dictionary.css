@@ -4,6 +4,25 @@
 }
 
 .Dictionary .input-group{
-    width: 30%;
+    width: 80%;
     margin: 0 auto;
+}
+
+.Dictionary  input{
+    height: 45px;
+    margin: 0 auto;
+}
+
+.Dictionary section {
+    background-color: rgb(250, 239, 245);
+    margin: 50px 100px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 4px 13px 20px rgb(43 43 43 / 20%)
+}
+
+.Dictionary .hint{
+    margin-left: 10%;
+    font-size: 14px;
+    color: gray;
 }
