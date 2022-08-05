@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1 className='text-center'>Dictionary</h1>
-        <Dictionary default={"sunrise"}/>
+        <Dictionary default={"sunshine"}/>
       </header>
     </div>
   );
