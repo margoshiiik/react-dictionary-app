@@ -7,3 +7,10 @@ body{
 .App-header{
   margin: 20px;
 }
+
+.App{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
